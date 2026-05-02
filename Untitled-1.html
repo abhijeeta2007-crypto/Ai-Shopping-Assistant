@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shopping Assistant</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background-color: #f0f2f5;
+        }
+        .container { text-align: center; }
+        h1 { color: #4a148c; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the AI Shopping Hub</h1>
+        <p>Your personalized assistant is ready to help you find the best deals.</p>
+        <p><strong>Click the bubble in the bottom right corner to start!</strong></p>
+    </div>
+
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "b3174174-f43d-4c14-9139-00a7861e9df9",
+            apiHost: "https://cloud.flowiseai.com",
+        })
+    </script>
+
+    </body>
+</html>
